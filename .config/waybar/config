@@ -1,0 +1,33 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["tray", "pulseaudio", "network", "cpu", "memory", "clock"],
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "disable-click": true,
+    },
+    "tray": {
+        "spacing": 5,
+    },
+    "clock": {
+        "format": "{:%l:%M %p}"
+    },
+    "cpu": {
+        "format": "CPU: {usage}%"
+    },
+    "memory": {
+        "format": "RAM: {}%"
+    },
+    "network": {
+        "format-wifi": "WiFi: {essid}",
+        "format-disconnected": "⚠ Disconnected"
+    },
+    "pulseaudio": {
+        "format": "Volume: {volume}%",
+        "format-muted": "Muted",
+        "on-click": "pavucontrol"
+    },
+}

@@ -1,0 +1,48 @@
+* {
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.6);;
+    color: white;
+}
+
+#window {
+    margin-top: 5px;
+    padding-bottom: 3.5px;
+    font-weight: 700;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: white;
+    border-top: 2px solid transparent;
+}
+
+#workspaces button.focused {
+    color: white;
+    border-top: 2px solid white;
+}
+
+#tray, #clock, #cpu, #memory, #network, #pulseaudio {
+    padding: 0 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+#mode {
+    font-weight: 700;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#network.disconnected {
+    color: #f53c3c;
+}
