@@ -7,7 +7,6 @@
     "modules-right": ["tray", "pulseaudio", "network", "cpu", "memory", "clock"],
     "sway/workspaces": {
         "disable-scroll": true,
-        "disable-click": true,
     },
     "tray": {
         "spacing": 5,
@@ -16,18 +15,21 @@
         "format": "{:%l:%M %p}"
     },
     "cpu": {
-        "format": "CPU: {usage}%"
+        "format": "🧠 {}%"
     },
     "memory": {
-        "format": "RAM: {}%"
+        "format": "💭 {}%"
     },
     "network": {
-        "format-wifi": "WiFi: {essid}",
+        "format-wifi": "🌐 {essid}",
         "format-disconnected": "⚠ Disconnected"
     },
     "pulseaudio": {
-        "format": "Volume: {volume}%",
-        "format-muted": "Muted",
+        "format": "{icon} {volume}%",
+	"format-icons": {
+	    "default": ["🔉", "🔉"]
+	},
+        "format-muted": "🔇",
         "on-click": "pavucontrol"
     },
 }

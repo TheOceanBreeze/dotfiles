@@ -17,5 +17,14 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'tamton-aquib/staline.nvim'
 	Plug 'arcticicestudio/nord-vim'
+	Plug 'nvim-lua/popup.nvim'
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+	Plug 'nvim-telescope/telescope.nvim'
+	Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
 colorscheme nord
+
+local g = vim.g
+
+g.dashboard_default_executive = "telescope"
