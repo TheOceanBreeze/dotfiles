@@ -6,9 +6,9 @@
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# NOTICE: Sudo is now symlinked to doas. No need for an alias.
+#
+alias zshreload="source ~/.zshrc"
+alias upgrade="paru -Syu && paru -Sua"
 
-alias sudo="echo Please use doas instead."
-alias mkinitcpio="echo Please use dracut instead."
-alias grub-install
-alias update-grub="echo Please use systemd-boot instead."
-alias make="echo Please use meson/ninja instead."

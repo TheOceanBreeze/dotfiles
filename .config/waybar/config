@@ -22,7 +22,8 @@
     },
     "network": {
         "format-wifi": "🌐 {essid}",
-        "format-disconnected": "⚠ Disconnected"
+        "format-disconnected": "⚠ Disconnected",
+	"on-click": "alacritty -e nmtui"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
