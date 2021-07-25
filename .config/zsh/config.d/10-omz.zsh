@@ -31,6 +31,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+doas
 git
 git-flow
 archlinux
@@ -38,11 +39,12 @@ colorize
 man
 please
 sudo
-vscode
+zsh-autosuggestions
 zsh-interactive-cd
 zsh-navigation-tools
 zsh_reload
 gnu-utils
+vim
 )
 
 source $ZSH/oh-my-zsh.sh

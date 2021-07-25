@@ -10,5 +10,10 @@
 # NOTICE: Sudo is now symlinked to doas. No need for an alias.
 #
 alias zshreload="source ~/.zshrc"
-alias upgrade="paru -Syu && paru -Sua"
+alias zshconfig="$EDITOR ~/.zshrc"
+
+alias vim="nvim"
+
+# Pacman related commands
+alias upgrade="doas powerpill -Syu && paru -Syu"
 

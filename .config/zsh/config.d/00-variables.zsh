@@ -7,7 +7,7 @@
 # else
 #   export EDITOR='mvim'
 # fi
-export EDITOR="flatpak run com.vscodium.codium"
+export EDITOR="nvim"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
