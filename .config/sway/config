@@ -6,3 +6,5 @@
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*.conf
+
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
