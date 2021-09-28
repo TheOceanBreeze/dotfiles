@@ -1,6 +1,6 @@
 # Ruby Version Manager
 export RVM_DIR="$HOME/.rvm"
-[ -s "$RVM_DIR/scripts/rvm" ] && "$RVM_DIR/scripts/rvm" # This loads rvm
+source $RVM_DIR/scripts/rvm # This loads rvm
 # source ~/.rvm/scripts/rvm
 
 # Node Version Manager

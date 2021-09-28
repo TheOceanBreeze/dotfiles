@@ -44,7 +44,6 @@ zsh-interactive-cd
 zsh-navigation-tools
 zsh_reload
 gnu-utils
-vim
 )
 
 source $ZSH/oh-my-zsh.sh
